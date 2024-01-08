@@ -14,5 +14,26 @@ try:
 
 except ValueError:
     print("Input error")
-except Exception as e:
-    print(f"An error: {e}")
+except :
+    print("Произошла ошибка")
+
+
+"""
+Функция plus_two() выполняет одну простую задачу — выводит результат сложения
+переданного в нее числа 2 и значения переменной number. В переменную number должно быть
+передано число. Обработайте ситуацию, если в эту переменную переданы данные какого-то
+другого типа. В случае ошибки напечатайте в консоли сообщение «Ожидаемый тип данных
+— число!».
+"""
+def plus_two(number):
+    try:
+        result = 2 + int(number)
+        print(result)
+    except ValueError:
+        print("Ожидаемый тип данных — число!")
+
+try:
+    input_number = input("Введите число: ")
+    plus_two(input_number)
+except:
+    print(f"Произошла ошибка:")
