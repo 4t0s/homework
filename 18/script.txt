@@ -1,0 +1,8 @@
+@echo off
+
+python -m venv myenv
+
+call myenv\Scripts\activate
+
+pip install python-docx
+
